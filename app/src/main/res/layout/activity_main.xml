@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:padding="20dp" android:orientation="vertical">
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Split VPN" android:textSize="26sp" android:textStyle="bold"/>
+    <TextView android:id="@+id/statusText" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:text="Desconectado" android:textSize="18sp"/>
+    <TextView android:id="@+id/selectedApp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Aplicativo: nenhum"/>
+    <TextView android:id="@+id/trafficText" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Enviados: 0 bytes  •  Recebidos: 0 bytes"/>
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="22dp" android:text="Aplicativo que usará a VPN" android:textStyle="bold"/>
+    <Spinner android:id="@+id/appSpinner" android:layout_width="match_parent" android:layout_height="48dp"/>
+    <EditText android:id="@+id/address" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Endereço do cliente (ex. 10.7.0.2/32)" android:inputType="text"/>
+    <EditText android:id="@+id/dns" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="DNS (ex. 1.1.1.1)" android:inputType="text"/>
+    <EditText android:id="@+id/endpoint" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Endpoint (ex. vpn.exemplo.com:51820)" android:inputType="textUri"/>
+    <EditText android:id="@+id/peerPublicKey" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Chave pública do servidor" android:inputType="textNoSuggestions"/>
+    <EditText android:id="@+id/allowedIps" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Rotas (ex. 0.0.0.0/0, ::/0)" android:inputType="text"/>
+    <EditText android:id="@+id/privateKey" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Chave privada do cliente (deixe vazio para manter)" android:inputType="textPassword"/>
+    <EditText android:id="@+id/presharedKey" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Chave pré-compartilhada opcional" android:inputType="textPassword"/>
+    <TextView android:id="@+id/keyHint" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Chave privada necessária"/>
+    <Button android:id="@+id/saveButton" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Salvar configurações"/>
+    <Button android:id="@+id/connectButton" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Conectar"/>
+    <Button android:id="@+id/disconnectButton" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Desconectar"/>
+    <Button android:id="@+id/privacyButton" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Política de privacidade"/>
+</LinearLayout>
+</ScrollView>

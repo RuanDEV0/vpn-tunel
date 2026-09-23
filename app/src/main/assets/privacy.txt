@@ -1,0 +1,7 @@
+Política de privacidade — Split VPN
+
+O app cria uma conexão WireGuard somente para o aplicativo que você selecionar. Os outros aplicativos seguem usando a rede normal do dispositivo. Os pacotes são encaminhados ao servidor WireGuard que você configurar; o operador desse servidor pode observar metadados da conexão e tráfego não protegido por criptografia de ponta a ponta.
+
+O app não envia telemetria nem registra conteúdo dos pacotes. As configurações não secretas são armazenadas localmente em DataStore. Chaves privadas e pré-compartilhadas são cifradas localmente com uma chave do Android Keystore e não são enviadas a terceiros além do necessário ao protocolo WireGuard. Estatísticas de bytes permanecem no dispositivo.
+
+Você pode apagar os dados e as chaves em Configurações do Android > Apps > Split VPN > Armazenamento > Limpar dados. Para dúvidas sobre uma distribuição publicada, consulte o contato do desenvolvedor exibido na loja dessa distribuição.
